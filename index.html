@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simplu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav button {
+            background-color: #555;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            background-color: #ff9800;
+        }
+
+        section {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('blog')">Blog</button>
+            <button onclick="showPage('chat')">Chatzone</button>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h1>Bine ai venit pe Home!</h1>
+        <p>Aceasta este pagina principală.</p>
+    </section>
+
+    <script>
+        function showPage(page) {
+            let content = document.getElementById("content");
+
+            if (page === "home") {
+                content.innerHTML = "<h1>Bine ai venit pe Home!</h1><p>Aceasta este pagina principală.</p>";
+            } 
+            else if (page === "blog") {
+                content.innerHTML = "<h1>Blog</h1><p>Aici vor apărea articolele tale.</p>";
+            } 
+            else if (page === "chat") {
+                content.innerHTML = "<h1>Chatzone</h1><p>Aici va fi zona de chat.</p>";
+            }
+        }
+    </script>
+
+</body>
+</html>
