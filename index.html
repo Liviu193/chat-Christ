@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Simplu</title>
+    <title>Simple Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -48,8 +48,8 @@
     </header>
 
     <section id="content">
-        <h1>Bine ai venit pe Home!</h1>
-        <p>Aceasta este pagina principală.</p>
+        <h1>Welcome to Home!</h1>
+        <p>This is the main page.</p>
     </section>
 
     <script>
@@ -57,13 +57,13 @@
             let content = document.getElementById("content");
 
             if (page === "home") {
-                content.innerHTML = "<h1>Bine ai venit pe Home!</h1><p>Aceasta este pagina principală.</p>";
+                content.innerHTML = "<h1>Welcome to Home!</h1><p>This is the main page.</p>";
             } 
             else if (page === "blog") {
-                content.innerHTML = "<h1>Blog</h1><p>Aici vor apărea articolele tale.</p>";
+                content.innerHTML = "<h1>Blog</h1><p>This is where your articles will appear.</p>";
             } 
             else if (page === "chat") {
-                content.innerHTML = "<h1>Chatzone</h1><p>Aici va fi zona de chat.</p>";
+                content.innerHTML = "<h1>Chatzone</h1><p>This will be the chat area.</p>";
             }
         }
     </script>
